@@ -1,0 +1,139 @@
+@import url('/components/css/index.css');
+
+/* css responsavel pela estilizacao da pagina sobre nos */
+
+#conteudo-pagina-sobrenos {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10%;
+    background-position: center;
+    background-color: #ffffff;
+   
+}
+
+.sobrenos-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.1rem, 2vw, 3rem);
+    width: 100%;
+    font-family: MonumentExtended;
+    color: var(--secondary-color);
+}
+
+.grupo-geral-imagens {
+    padding: 20px 10px;
+    justify-content: center;
+    display: flex;
+    gap: 2%;
+}
+
+.dupla-imagens {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5%;
+}
+
+.aling-avatar {
+    width: 50%;
+    border-radius: 15%;
+}
+
+.aling-avatar img {
+    transition: 0.8s;
+    width: 100%;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.aling-avatar img:hover {
+    border-radius: 15%;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.avatar-darkas img:hover {
+    box-shadow: -10px 11px 24px -1px #505050;
+}
+
+.avatar-kaio img:hover {
+    box-shadow: 0px 4px 24px 2px #505050;
+}
+
+
+.avatar-diogo img:hover {
+    box-shadow: 11px 11px 24px -1px #505050;
+
+}
+
+.avatar-marleide img:hover {
+    box-shadow: 0px 4px 24px 2px #505050;
+}
+
+
+@media (max-width:730px) {
+
+
+    #conteudo-pagina-sobrenos {
+        height: 85vh;
+        max-width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sobrenos-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .grupo-geral-imagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px 30px;
+        gap: 20px;
+    }
+
+    .dupla-imagens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4%;
+
+
+    }
+    .aling-avatar {
+        max-width: 250px;
+    }
+
+
+    .aling-avatar img {
+        width: 100%;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

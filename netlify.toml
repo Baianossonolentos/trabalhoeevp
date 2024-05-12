@@ -1,0 +1,22 @@
+[[redirects]]
+  from = "/"
+  to = "/components/html/index.html"
+  status = 200
+
+
+[[redirects]]
+  from = "/simulador"
+  to = "/components/html/simulador.html"
+  status = 200
+
+[[redirects]]
+  from = "/windows95"
+  to = "/components/pdf/windows95.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/components/html/erro404.html"
+  status = 404
+
+

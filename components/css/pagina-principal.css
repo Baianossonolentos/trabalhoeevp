@@ -1,0 +1,390 @@
+@import url('/components/css/index.css');
+
+/* css responsavel pela estilizacao da pagina principal */
+
+
+#conteudo-pagina-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-image: url(/components/img/SITEEEAVPBACKGROUNDPRINCIPALtransparenmt.png);
+    background-position: bottom left;
+    
+    
+
+
+}
+
+
+.container-center-principal{
+    display: flex ;
+    width: 80%;
+    /* background-color: rgba(0, 255, 255, 0.411); */
+    height: 100%;
+    
+    align-items: end;
+    
+}
+
+.sections-principal {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(0, 0, 255, 0.281); */
+    height: 80%;
+    width: 100%;
+    position: relative;
+   
+
+    
+   
+}
+
+#conteudo-pagina-principal{
+    position: relative;
+    /* background-color: aquamarine; */
+  
+   
+
+}
+   
+
+.sobre-tiopaulo{
+    width: 100%;
+    background-color: #0D3F00;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    z-index: 996;
+    background-image: url(/components/img/backgroundparte2efect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+
+
+.container-frase-banner-principal{
+    position: absolute;
+    display: flex;
+    max-width: 600px;
+    top: 50px;
+    transition: 1s;
+
+   
+     
+  
+}
+
+.container-frase-banner-principal:hover{
+    transform: scale(1.02);
+}
+
+.frase-banner-principal{
+    width: 100%;
+}
+
+
+
+
+
+.container-professor-banner-principal{
+    position: absolute;
+    display: flex;
+    width: 600px;
+    /* width: 40%; */
+    bottom: 200px;
+    left: 590px;
+  
+    
+
+   
+}
+
+
+
+.professor-banner-principal{
+    width: 100%;
+    
+}
+
+
+
+
+.section01 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1.2;
+   
+
+}
+
+
+.img-paper{
+    width: 100%;
+ 
+}
+
+
+
+
+
+
+
+
+.section02 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    flex: 1;
+   
+
+}
+
+.image-aling-intem1 {
+ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    
+}
+
+.aling-image1 {
+    width: 70%;
+}
+
+.aling-image1 img {
+    width: 100%;
+  
+}
+
+
+
+.image-aling-intem2 {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.aling-image2 {
+    width: 70%;
+}
+
+.aling-image2 img {
+    width: 100%;
+}
+
+
+.img-lapis{
+    position: absolute;
+    z-index: 997;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  
+ 
+  
+  
+   
+  
+
+}
+
+
+.img-lapis img{
+
+   align-items: end;
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width:1490px) {
+    .container-professor-banner-principal{
+        width: 500px;
+    /* width: 40%; */
+    bottom: 150px;
+    left: 590px;
+    
+       
+    }
+
+
+
+    .sobre-tiopaulo{ height: 160px;}
+
+
+
+
+   
+
+
+
+
+
+}
+
+
+@media (max-width:1222px) {
+    .container-professor-banner-principal{
+        width: 500px;
+       
+        bottom: 100px;
+        left: 390px;
+       
+    }
+
+ 
+
+
+    
+
+}
+
+@media (max-width:1222px) {.sobre-tiopaulo{ height: 120px;} }
+
+
+@media (max-width:1000px) {
+
+    .sections-principal{
+        display:flex ;
+        justify-content: right;
+      align-items: flex-end;
+    }
+
+    .container-professor-banner-principal{
+        width: 350px;
+        /* width: 40%; */
+      
+      
+
+       position: static
+    
+    }
+
+    .container-frase-banner-principal{
+        width: 500px;
+        left: 0;
+
+    }
+
+    #conteudo-pagina-principal {
+        height: 90vh;
+    }
+
+
+
+    
+    .sections-principal{
+      
+        height: 90%;
+       
+    }
+
+
+    .sobre-tiopaulo{ display: none;}
+
+
+
+}
+
+@media (max-width: 1222px) and (max-height: 1300px) {  
+    .container-professor-banner-principal{
+   width: 500px;
+   bottom: 100px;
+   left: 390px;
+  
+}}
+
+@media (max-width:780px) {
+     
+    #conteudo-pagina-principal {
+        background-image: url(/components/img/backgroundprincipalmobile.png);
+    }
+
+    #conteudo-pagina-principal {
+        height: 90vh;
+    }
+
+
+
+    
+    .sections-principal{
+      
+        height: 90%;
+       
+    }
+
+
+    .container-frase-banner-principal{
+        width: 400px;
+
+    }
+
+ 
+
+
+
+    
+
+
+}
+
+
+@media (max-width:454px){
+    .sections-principal{
+     
+        height: 90%;
+    }
+
+
+
+
+
+
+    #conteudo-pagina-principal {
+        height: 90vh;
+    }
+
+
+    .container-professor-banner-principal{
+        width: 300px;
+        left: 0;
+     
+        
+     
+        
+       
+        
+    
+    }
+
+
+
+    .container-frase-banner-principal{
+        width: 300px;
+
+    }
+
+}
+
+
+/* @media (max-height:2000px) {
+    .container-professor-banner-principal{
+        width: 450px;}
+
+} */
+
+
+

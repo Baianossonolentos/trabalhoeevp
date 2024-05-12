@@ -1,0 +1,128 @@
+@import url('/components/css/index.css');
+
+/* css responsavel pela estilizacao da pagina 404 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.deuruin {
+    width: 100%;
+    height: 100%;
+    background: url(/components/img/sadcat.gif);
+}
+
+.gradiente {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7511379551820728) 38%, rgba(0, 0, 0, 0.7511379551820728) 77%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-erro {
+    justify-content: center;
+    width: 400px;
+    height: 40%;
+    border-radius: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 15px 16px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+
+.conteudo-erro h1 {
+    font-family:PoppinsBold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+.conteudo-erro p {
+    width: 100%;
+    padding: 15px 25px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1em;
+
+}
+
+/* botao ir pro simulador */
+.botao-case {
+    display: flex;
+    gap: 5px;
+    width: 80%;
+
+
+}
+
+.botaoefect {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    --green: #a31bfd;
+    font-size: 15px;
+    padding: 1.2em 0.8em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 1s;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(95, 27, 253, 0.1) 1%, transparent 40%, transparent 60%, rgba(151, 27, 253, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(144, 27, 253, 0.4), 0 0 9px 3px rgba(166, 27, 253, 0.1);
+}
+
+.botaoefect:hover {
+    color: #ba82ff;
+    box-shadow: inset 0 0 10px rgba(196, 27, 253, 0.6), 0 0 9px 3px rgba(196, 27, 253, 0.2);
+}
+
+.botaoefect:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 20em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(196, 27, 253, 0.1) 40%, rgba(208, 27, 253, 0.1) 60%, transparent 100%);
+}
+
+
+
+@media (max-width:730px) {
+    .conteudo-erro {
+        height: 40%;
+        width: 80%;
+    }
+
+    .botao-case {
+
+        flex-direction: column;
+
+    }
+
+    .botaoefect {
+        font-size: 15px;
+        padding: 1em 2.7em;
+
+    }
+}
